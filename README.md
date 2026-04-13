@@ -1,6 +1,6 @@
 # AI PM Maturity Assessment
 
-A Claude Code skill for benchmarking how effectively a product management team uses AI across the full product lifecycle.
+A skill for benchmarking how effectively a product management team uses AI across the full product lifecycle. Works with Claude Code and GitHub Copilot.
 
 ## What It Does
 
@@ -32,19 +32,44 @@ Produces an honest, evidence-based assessment of a PM team's AI maturity. Scores
 | 4 | Advanced | AI-native with feedback loops |
 | 5 | Best Practice | Full coverage; team-wide; evolving |
 
-## Files
+## Installation
 
-- `ai-pm-maturity-assessment/SKILL.md` — The skill definition, rubric, assessment workflow, and output format
-- `AI in Product Management — Lifecycle Rubric & Benchmark Guide.md` — Full rubric with sourcing and best-practice signals for each phase
+### Claude Code
+
+Copy the skill into your project's `.claude/skills/` directory:
+
+```bash
+# From your project root
+git clone https://github.com/fitzgeraldsteele/ai-pm-maturity-assessment-skill /tmp/ai-pm-skill
+cp -r /tmp/ai-pm-skill/.claude/skills/ai-pm-maturity-assessment .claude/skills/
+```
+
+The skill is then available in any Claude Code session within that project.
+
+### GitHub Copilot (VS Code)
+
+Copilot recognizes skills in `.claude/skills/` automatically — same install as above. The skill will be available as a slash command in Copilot Chat once the files are present in your repo.
+
+Alternatively, copy the agent definition for a Copilot-optimized experience:
+
+```bash
+cp /tmp/ai-pm-skill/.github/agents/ai-pm-assessor.agent.md .github/agents/
+```
 
 ## Usage
 
-Install the skill in a Claude Code workspace and invoke it when you want to:
+Once installed, invoke it when you want to:
 
 - Benchmark a PM team's AI adoption
 - Identify the highest-leverage gaps in AI-assisted workflows
 - Plan where to invest in AI tooling for a product team
 - Compare practices against industry benchmarks from leading AI-native companies
+
+## Files
+
+- `.claude/skills/ai-pm-maturity-assessment/SKILL.md` — Skill definition, rubric, assessment workflow, and output format (works with Claude Code and GitHub Copilot)
+- `.github/agents/ai-pm-assessor.agent.md` — Custom agent definition for GitHub Copilot
+- `AI in Product Management — Lifecycle Rubric & Benchmark Guide.md` — Full rubric with sourcing and best-practice signals for each phase
 
 ## Sources
 
