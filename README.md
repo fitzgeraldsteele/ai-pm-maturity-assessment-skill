@@ -36,7 +36,6 @@ Produces an honest, evidence-based assessment of a PM team's AI maturity. Scores
 
 - `ai-pm-maturity-assessment/SKILL.md` — The skill definition, rubric, assessment workflow, and output format
 - `AI in Product Management — Lifecycle Rubric & Benchmark Guide.md` — Full rubric with sourcing and best-practice signals for each phase
-- `ai-pm-maturity-assessment-2026-04.md` — Example assessment: VMSS/Compute Fleet PM team (April 2026), scored 3.3/5.0
 
 ## Usage
 
