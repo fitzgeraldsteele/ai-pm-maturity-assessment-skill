@@ -457,3 +457,7 @@ This rubric is synthesized from 40+ episodes of Lenny's Podcast (January 2025 â€
 - Prompt engineering (Sander Schulhoff)
 - AI engineering (Chip Huyen)
 - Independent practitioners (Simon Willison, Lazar Jovanovic, Zevi Arnovitz)
+
+---
+
+*Skill source: [github.com/fitzgeraldsteele/ai-pm-maturity-assessment-skill](https://github.com/fitzgeraldsteele/ai-pm-maturity-assessment-skill)*
