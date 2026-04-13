@@ -37,13 +37,13 @@ Dan Shipper (Every) has operationalized discovery even further by creating a **H
 
 ### Concrete Examples, Techniques & Prompts
 
-**Frontier Inc. exercise (Aparna Chennapragada, Microsoft):** Gather your team and ask: "If we were founding a company today with the same mission, using a fully AI-native approach, what would our discovery process look like?" Prototype the answer. If the answer is "not meaningfully different from what we do today," that's a red flag.
+**Frontier Inc. exercise (Aparna Chennapragada, Microsoft):** (transcript @11:14) Gather your team and ask: "If we were founding a company today with the same mission, using a fully AI-native approach, what would our discovery process look like?" Prototype the answer. If the answer is "not meaningfully different from what we do today," that's a red flag.
 
-**LLM map-reduce for call analysis (Howie Liu, Airtable):** Take a corpus of sales calls, customer interviews, or support tickets. Break into chunks. Run each through an LLM with a prompt like: "Extract the top product requests, objections, and competitive mentions from this transcript. Flag any quotes that reveal unmet needs." Aggregate results across all chunks to find patterns.
+**LLM map-reduce for call analysis (Howie Liu, Airtable):** ([▶ YouTube @14:49](https://youtu.be/GT0jtVjRy2E?t=889)) Take a corpus of sales calls, customer interviews, or support tickets. Break into chunks. Run each through an LLM with a prompt like: "Extract the top product requests, objections, and competitive mentions from this transcript. Flag any quotes that reveal unmet needs." Aggregate results across all chunks to find patterns.
 
-**Community signal synthesis (Mike Krieger, Anthropic):** Point Claude at community channels and ask it to identify recurring themes, feature requests, and pain points across hundreds of messages. Use this as an input to roadmap prioritization.
+**Community signal synthesis (Mike Krieger, Anthropic):** ([▶ YouTube @19:24](https://youtu.be/DKrBGOFs0GY?t=1164)) Point Claude at community channels and ask it to identify recurring themes, feature requests, and pain points across hundreds of messages. Use this as an input to roadmap prioritization.
 
-**Brainstorming with AI (Simon Willison):** Ask for 20+ ideas iteratively. "The first ideas are obvious, later ones point in interesting directions." Combine unexpected domains for creative inspiration — e.g., "Marketing my SaaS inspired by marine biology."
+**Brainstorming with AI (Simon Willison):** ([▶ YouTube @25:00](https://youtu.be/wc8FBhQtdsA?t=1500)) Ask for 20+ ideas iteratively. "The first ideas are obvious, later ones point in interesting directions." Combine unexpected domains for creative inspiration — e.g., "Marketing my SaaS inspired by marine biology."
 
 ### Dos, Don'ts & Next Steps
 
@@ -77,13 +77,13 @@ Claire Vo (ChatPRD founder, "How I AI" podcast host) takes this further with spe
 
 ### Concrete Examples, Techniques & Prompts
 
-**Always-on feedback triage (Boris Cherny, Anthropic):** Connect Claude (or your LLM of choice) to your feedback channels (Slack, Zendesk, Intercom, email). Prompt: "Review the last week of feedback. Categorize into: bugs, feature requests, UX confusion, and praise. For each category, rank by frequency and severity. Flag any new themes that weren't present last month."
+**Always-on feedback triage (Boris Cherny, Anthropic):** ([▶ YouTube @46:32](https://youtu.be/We7BZVKbCVw?t=2792)) Connect Claude (or your LLM of choice) to your feedback channels (Slack, Zendesk, Intercom, email). Prompt: "Review the last week of feedback. Categorize into: bugs, feature requests, UX confusion, and praise. For each category, rank by frequency and severity. Flag any new themes that weren't present last month."
 
-**Map-reduce transcript analysis (Howie Liu, Airtable):** For long transcripts or large feedback corpora: chunk the input, run analysis on each chunk, then aggregate. This avoids context window limits and produces more thorough results than single-pass analysis.
+**Map-reduce transcript analysis (Howie Liu, Airtable):** ([▶ YouTube @14:49](https://youtu.be/GT0jtVjRy2E?t=889)) For long transcripts or large feedback corpora: chunk the input, run analysis on each chunk, then aggregate. This avoids context window limits and produces more thorough results than single-pass analysis.
 
-**Specialized feedback agents (Claire Vo):** Create separate AI agents (custom GPTs, Claude Projects, etc.) with different system prompts for different feedback types. A "Feature Request Analyst" agent with instructions to categorize requests by user segment, frequency, and strategic alignment. A "Churn Risk Detector" agent focused on identifying frustration signals.
+**Specialized feedback agents (Claire Vo):** ([▶ YouTube @42:06](https://youtu.be/DIa0MYJzM5I?t=2526)) Create separate AI agents (custom GPTs, Claude Projects, etc.) with different system prompts for different feedback types. A "Feature Request Analyst" agent with instructions to categorize requests by user segment, frequency, and strategic alignment. A "Churn Risk Detector" agent focused on identifying frustration signals.
 
-**Few-shot prompting for feedback classification (Sander Schulhoff):** Provide 3-5 examples of how you'd categorize feedback, then let the model classify the rest. "This is the highest-ROI prompting technique — bad prompts get you 0% accuracy; good prompts with examples get you 90%."
+**Few-shot prompting for feedback classification (Sander Schulhoff):** ([▶ YouTube @12:18](https://youtu.be/eKuFqQKYRrA?t=738)) Provide 3-5 examples of how you'd categorize feedback, then let the model classify the rest. "This is the highest-ROI prompting technique — bad prompts get you 0% accuracy; good prompts with examples get you 90%."
 
 ### Dos, Don'ts & Next Steps
 
@@ -117,13 +117,13 @@ Brian Balfour (Reforge) framed ChatGPT and similar AI assistants as "the next bi
 
 ### Concrete Examples, Techniques & Prompts
 
-**Real-time competitive teardowns (Amol Avasare, Anthropic):** Use Claude's Cowork mode + Chrome extension to walk through a competitor's signup flow, pricing page, and key features. Ask Claude to document the flow, identify friction points, compare to your own flow, and suggest improvements.
+**Real-time competitive teardowns (Amol Avasare, Anthropic):** ([▶ YouTube @24:44](https://youtu.be/k-H4nsOTuxU?t=1484)) Use Claude's Cowork mode + Chrome extension to walk through a competitor's signup flow, pricing page, and key features. Ask Claude to document the flow, identify friction points, compare to your own flow, and suggest improvements.
 
-**Answer Engine Optimization audit (Ethan Smith, Graphite):** Ask ChatGPT, Claude, Perplexity, and Google's AI Overviews: "What's the best [your product category] for [your target use case]?" Document where your product appears (or doesn't) in AI recommendations. Then ask: "Why would someone choose [competitor] over [your product]?" The responses reveal how AI models perceive your positioning.
+**Answer Engine Optimization audit (Ethan Smith, Graphite):** ([▶ YouTube @6:33](https://youtu.be/iT7kq-R3Gjc?t=393)) Ask ChatGPT, Claude, Perplexity, and Google's AI Overviews: "What's the best [your product category] for [your target use case]?" Document where your product appears (or doesn't) in AI recommendations. Then ask: "Why would someone choose [competitor] over [your product]?" The responses reveal how AI models perceive your positioning.
 
 **Continuous competitive monitoring:** Set up a recurring prompt that synthesizes recent competitor announcements, pricing changes, and feature launches from public sources. Run weekly or bi-weekly.
 
-**Competitive positioning stress-test (adapted from Kevin Weil, OpenAI):** Ask an AI model to argue the case for each major competitor in your space, then argue the case against your product. Use the output to identify positioning gaps.
+**Competitive positioning stress-test (adapted from Kevin Weil, OpenAI):** ([▶ YouTube @18:58](https://youtu.be/scsW6_2SPC4?t=1138)) Ask an AI model to argue the case for each major competitor in your space, then argue the case against your product. Use the output to identify positioning gaps.
 
 ### Dos, Don'ts & Next Steps
 
@@ -157,20 +157,20 @@ Zevi Arnovitz (Meta PM) built a more sophisticated system using Cursor's `/comma
 
 ### Concrete Examples, Techniques & Prompts
 
-**Rambling-to-PRD template (Dan Shipper, Every):** Create a voice memo or brain dump about a feature idea. Feed it to Claude with a prompt like: "Here's my rough thinking about a feature. Turn this into a structured PRD with: problem statement, user stories, success metrics, scope (in/out), technical considerations, and open questions. Flag any gaps in my thinking." Store the prompt as a reusable template.
+**Rambling-to-PRD template (Dan Shipper, Every):** ([▶ YouTube @42:45](https://youtu.be/crMrVozp_h8?t=2565)) Create a voice memo or brain dump about a feature idea. Feed it to Claude with a prompt like: "Here's my rough thinking about a feature. Turn this into a structured PRD with: problem statement, user stories, success metrics, scope (in/out), technical considerations, and open questions. Flag any gaps in my thinking." Store the prompt as a reusable template.
 
-**Lazar's planning stack:**
+**Lazar's planning stack:** ([▶ YouTube @13:12](https://youtu.be/0XNkUdzxiZI?t=792))
 1. Master Plan — "Why are we building this? Who is it for? How should they feel using it?"
 2. Implementation Plan — "What's the high-level order? Backend first, then auth, then UI?"
 3. Design Guidelines — "How should this look and feel? Include specific CSS/styling direction."
 4. User Journey — "Step 1: User lands on page. Step 2: They see X. Step 3: They click Y."
 5. Tasks.md — "Break into specific subtasks the agent can execute one at a time."
 
-**Zevi's /create plan command (Cursor):** When a Linear ticket exists, type `/create plan STU88` and Claude fetches the ticket context, then generates: scope definition, data model, UX/UI approach, validation method, grading criteria, and system prompt changes needed.
+**Zevi's /create plan command (Cursor):** ([▶ YouTube @29:08](https://youtu.be/1em64iUFt3U?t=1748)) When a Linear ticket exists, type `/create plan STU88` and Claude fetches the ticket context, then generates: scope definition, data model, UX/UI approach, validation method, grading criteria, and system prompt changes needed.
 
-**Claire Vo's ChatPRD approach:** Claire built ChatPRD specifically as an AI tool for PRD writing. Her approach: specialized agents that act as a "CTO who challenges you, doesn't people-please." The system prompt: "I own the problem/user experience. You own the build. Challenge me. Don't be a people pleaser."
+**Claire Vo's ChatPRD approach:** ([▶ YouTube @42:06](https://youtu.be/DIa0MYJzM5I?t=2526)) Claire built ChatPRD specifically as an AI tool for PRD writing. Her approach: specialized agents that act as a "CTO who challenges you, doesn't people-please." The system prompt: "I own the problem/user experience. You own the build. Challenge me. Don't be a people pleaser."
 
-**Self-criticism loop (Sander Schulhoff):** After generating a PRD, prompt: "Review this PRD. What's missing? What assumptions are untested? What would a skeptical engineer push back on?" Then iterate.
+**Self-criticism loop (Sander Schulhoff):** ([▶ YouTube @28:42](https://youtu.be/eKuFqQKYRrA?t=1722)) After generating a PRD, prompt: "Review this PRD. What's missing? What assumptions are untested? What would a skeptical engineer push back on?" Then iterate.
 
 ### Dos, Don'ts & Next Steps
 
@@ -206,11 +206,11 @@ Logan Kilpatrick (OpenAI) described building **custom GPTs specifically for OKR 
 
 ### Concrete Examples, Techniques & Prompts
 
-**OKR validation prompt (adapted from Logan Kilpatrick, OpenAI):** "Here are our team's OKRs for next quarter: [paste OKRs]. Review for: (1) Are key results measurable and time-bound? (2) Do key results actually ladder to objectives? (3) Are targets ambitious but achievable given [context about team size, historical performance]? (4) Are there any blind spots — important areas not covered? Flag issues and suggest improvements."
+**OKR validation prompt (adapted from Logan Kilpatrick, OpenAI):** ([▶ transcript @16:50]) "Here are our team's OKRs for next quarter: [paste OKRs]. Review for: (1) Are key results measurable and time-bound? (2) Do key results actually ladder to objectives? (3) Are targets ambitious but achievable given [context about team size, historical performance]? (4) Are there any blind spots — important areas not covered? Flag issues and suggest improvements."
 
-**Tomer's measurement formula:** (Volume × Quality) ÷ Time. Apply this to any product activity. For PRDs: how many PRDs shipped × quality rating from stakeholders ÷ calendar days. For features: features shipped × user satisfaction delta ÷ weeks. Track before and after AI adoption.
+**Tomer's measurement formula:** (transcript @31:54) (Volume × Quality) ÷ Time. Apply this to any product activity. For PRDs: how many PRDs shipped × quality rating from stakeholders ÷ calendar days. For features: features shipped × user satisfaction delta ÷ weeks. Track before and after AI adoption.
 
-**Nicole Forsgren's adapted DORA metrics for AI teams:** Track deployment frequency (how often you ship), lead time for changes (idea to production), change failure rate (% of deployments causing issues), and time to restore service. Add: developer experience survey scores and flow state indicators.
+**Nicole Forsgren's adapted DORA metrics for AI teams:** ([▶ YouTube @12:23](https://youtu.be/SWcDfPVTizQ?t=743)) Track deployment frequency (how often you ship), lead time for changes (idea to production), change failure rate (% of deployments causing issues), and time to restore service. Add: developer experience survey scores and flow state indicators.
 
 **AI-generated success criteria (general pattern):** After writing a PRD, prompt: "Based on this PRD, suggest 3-5 success metrics we should track. For each metric, define: what we're measuring, how we'll measure it, what baseline we expect, and what target would indicate success. Flag any metrics that would be hard to instrument."
 
@@ -246,13 +246,13 @@ Simon Willison described a practical technique: "Prototype 3 different design ap
 
 ### Concrete Examples, Techniques & Prompts
 
-**3-direction rapid prototyping (Simon Willison):** Instead of designing one mockup, generate 3 working prototypes with different approaches using Lovable, Bolt, or v0. Run actual usability tests on all three. The cost of generating each is near-zero; the value of testing real alternatives is enormous.
+**3-direction rapid prototyping (Simon Willison):** ([▶ YouTube @25:00](https://youtu.be/wc8FBhQtdsA?t=1500)) Instead of designing one mockup, generate 3 working prototypes with different approaches using Lovable, Bolt, or v0. Run actual usability tests on all three. The cost of generating each is near-zero; the value of testing real alternatives is enormous.
 
-**Lazar's design reference technique:** Instead of describing a design in words, upload a screenshot from Mobbin or Dribbble as a reference, plus code snippets from 21st.dev or DotBuild. "Tools understand code better than English" — a CSS snippet communicates design intent more reliably than a paragraph of description.
+**Lazar's design reference technique:** ([▶ YouTube](https://youtu.be/0XNkUdzxiZI?t=792)) Instead of describing a design in words, upload a screenshot from Mobbin or Dribbble as a reference, plus code snippets from 21st.dev or DotBuild. "Tools understand code better than English" — a CSS snippet communicates design intent more reliably than a paragraph of description.
 
-**Intent-to-prototype workflow (Guillermo Rauch, v0):** Type a description of what you want into v0: "A dashboard with a sidebar navigation, a main content area showing a data table with sortable columns, and a chart above it." Get a working React prototype in seconds. Iterate by describing changes.
+**Intent-to-prototype workflow (Guillermo Rauch, v0):** ([▶ YouTube @14:36](https://youtu.be/-QsTmu2CqhA?t=876)) Type a description of what you want into v0: "A dashboard with a sidebar navigation, a main content area showing a data table with sortable columns, and a chart above it." Get a working React prototype in seconds. Iterate by describing changes.
 
-**Lovable's chat mode (Anton Osika):** When a prototype isn't matching your vision, switch to chat mode: "How does this work? I'm not getting what I want here, am I missing something? What should I do?" — a way to debug your intent before generating more code.
+**Lovable's chat mode (Anton Osika):** ([▶ YouTube @19:20](https://youtu.be/DZtGxNs9AVg?t=1160)) When a prototype isn't matching your vision, switch to chat mode: "How does this work? I'm not getting what I want here, am I missing something? What should I do?" — a way to debug your intent before generating more code.
 
 ### Dos, Don'ts & Next Steps
 
@@ -325,13 +325,13 @@ Boris Cherny (Head of Claude Code) noted that at Anthropic, "everyone on the Cla
 
 ### Concrete Examples, Techniques & Prompts
 
-**Technical spec generation (Zevi Arnovitz):** After exploring a feature with `/explore`, use `/create plan` to generate: scope definition, data model, UX/UI approach, validation method, grading criteria, and system prompt changes. This produces a document that both PMs and engineers can work from.
+**Technical spec generation (Zevi Arnovitz):** ([▶ YouTube @25:26](https://youtu.be/1em64iUFt3U?t=1526)) After exploring a feature with `/explore`, use `/create plan` to generate: scope definition, data model, UX/UI approach, validation method, grading criteria, and system prompt changes. This produces a document that both PMs and engineers can work from.
 
-**Claude.md as persistent context:** Create a markdown file in your project root that describes: project architecture, key technical decisions, coding conventions, and current priorities. Every AI conversation in that project automatically loads this context.
+**Claude.md as persistent context:** ([▶ YouTube @25:26](https://youtu.be/1em64iUFt3U?t=1526)) Create a markdown file in your project root that describes: project architecture, key technical decisions, coding conventions, and current priorities. Every AI conversation in that project automatically loads this context.
 
-**Cross-model code review:** After generating code, have multiple AI models review it. Zevi uses Claude for initial generation, then Codex for review: "Finds bugs, critical issues, medium/low issues automatically."
+**Cross-model code review:** ([▶ YouTube @25:26](https://youtu.be/1em64iUFt3U?t=1526)) After generating code, have multiple AI models review it. Zevi uses Claude for initial generation, then Codex for review: "Finds bugs, critical issues, medium/low issues automatically."
 
-**LinkedIn's specialized agents (Tomer Cohen):** Build focused agents for specific communication needs — a Trust Agent for safety/compliance review, a Growth Agent for growth-readiness review, an Analyst Agent for data access.
+**LinkedIn's specialized agents (Tomer Cohen):** (transcript @19:17) Build focused agents for specific communication needs — a Trust Agent for safety/compliance review, a Growth Agent for growth-readiness review, an Analyst Agent for data access.
 
 ### Dos, Don'ts & Next Steps
 
@@ -365,15 +365,15 @@ For non-technical PMs, the entry ramp is getting easier. Lazar Jovanovic builds 
 
 ### Concrete Examples, Techniques & Prompts
 
-**Lazar's agent execution prompt:** "Read all files in the project docs folder first. Don't do anything before reading PRDs. Read tasks.md for the next task. Execute it. Tell me what you did and how to test it."
+**Lazar's agent execution prompt:** ([▶ YouTube @13:12](https://youtu.be/0XNkUdzxiZI?t=792)) "Read all files in the project docs folder first. Don't do anything before reading PRDs. Read tasks.md for the next task. Execute it. Tell me what you did and how to test it."
 
-**Boris Cherny's parallel agent workflow:** Run multiple Claude Code agents simultaneously on different tasks. Each agent works on a focused, well-scoped problem. Review all PRs — 100% code review even when AI writes the code.
+**Boris Cherny's parallel agent workflow:** ([▶ YouTube @20:50](https://youtu.be/We7BZVKbCVw?t=1250)) Run multiple Claude Code agents simultaneously on different tasks. Each agent works on a focused, well-scoped problem. Review all PRs — 100% code review even when AI writes the code.
 
-**Zevi's progressive escalation for PMs:** Start with ChatGPT for architecture questions → move to Bolt/Lovable for visual prototypes → graduate to Cursor + Claude Code for full implementation. Don't jump straight to the terminal.
+**Zevi's progressive escalation for PMs:** ([▶ YouTube @25:26](https://youtu.be/1em64iUFt3U?t=1526)) Start with ChatGPT for architecture questions → move to Bolt/Lovable for visual prototypes → graduate to Cursor + Claude Code for full implementation. Don't jump straight to the terminal.
 
-**Token budget strategy (Boris Cherny):** Give engineers unlimited tokens initially to experiment. "Some engineers at Anthropic spend hundreds of thousands per month in tokens." Only optimize after scaling — move to cheaper models (Haiku vs. Opus) once patterns are validated.
+**Token budget strategy (Boris Cherny):** ([▶ YouTube @26:19](https://youtu.be/We7BZVKbCVw?t=1579)) Give engineers unlimited tokens initially to experiment. "Some engineers at Anthropic spend hundreds of thousands per month in tokens." Only optimize after scaling — move to cheaper models (Haiku vs. Opus) once patterns are validated.
 
-**StrongDM's agent QA (via Simon Willison):** Build simulated versions of your dependencies (APIs, databases) and have AI agents test against them continuously. This removes rate limits and external dependencies from your testing loop.
+**StrongDM's agent QA (via Simon Willison):** ([▶ YouTube @12:41](https://youtu.be/wc8FBhQtdsA?t=761)) Build simulated versions of your dependencies (APIs, databases) and have AI agents test against them continuously. This removes rate limits and external dependencies from your testing loop.
 
 ### Dos, Don'ts & Next Steps
 
@@ -407,18 +407,18 @@ At a more traditional QA level, Simon Willison described companies running "swar
 
 ### Concrete Examples, Techniques & Prompts
 
-**Eval creation workflow (Hamel Husain & Shreya Shankar):**
+**Eval creation workflow (Hamel Husain & Shreya Shankar):** ([▶ YouTube @1:00:56](https://youtu.be/BsWxPI9UM4c?t=3656))
 1. Start with manual error analysis — actually look at where your AI is failing
 2. Create a rubric defining "ideal" responses for each failure type
 3. Convert rubric into automated evals (Q&A pairs with grading criteria)
 4. Run evals on every model/prompt change
 5. Use a "benevolent dictator" pattern — one person owns the eval set and prevents bloat
 
-**Poor man's fine-tuning (Kevin Weil, OpenAI):** Include 3-5 examples of ideal behavior in your prompt: "Here's an example input and here's what a perfect response looks like. [Repeat 3x]. Now handle this new input." This captures 80% of fine-tuning value with zero infrastructure.
+**Poor man's fine-tuning (Kevin Weil, OpenAI):** ([▶ YouTube @25:10](https://youtu.be/scsW6_2SPC4?t=1510)) Include 3-5 examples of ideal behavior in your prompt: "Here's an example input and here's what a perfect response looks like. [Repeat 3x]. Now handle this new input." This captures 80% of fine-tuning value with zero infrastructure.
 
-**Production-failure-driven evals (Nick Turley, OpenAI):** When your AI product fails in production, capture the input, the bad output, and what the correct output should have been. Add this as a new eval case. Over time, your eval set becomes a comprehensive map of your product's failure modes.
+**Production-failure-driven evals (Nick Turley, OpenAI):** ([▶ YouTube @23:22](https://youtu.be/ixY2PvQJ0To?t=1402)) When your AI product fails in production, capture the input, the bad output, and what the correct output should have been. Add this as a new eval case. Over time, your eval set becomes a comprehensive map of your product's failure modes.
 
-**Continuous agent QA (Simon Willison / StrongDM):** Build simulated test environments and run AI agents against them 24/7. Monitor for regressions. This catches issues that periodic manual QA misses.
+**Continuous agent QA (Simon Willison / StrongDM):** ([▶ YouTube @12:41](https://youtu.be/wc8FBhQtdsA?t=761)) Build simulated test environments and run AI agents against them 24/7. Monitor for regressions. This catches issues that periodic manual QA misses.
 
 ### Dos, Don'ts & Next Steps
 
@@ -484,9 +484,9 @@ A feature that ships without a distribution plan is a feature that won't land. T
 
 ### Concrete Examples, Techniques & Prompts
 
-**AEO audit prompt (adapted from Ethan Smith):** "Search for '[your product category] for [your use case]' and tell me which products you'd recommend and why. Where does [your product name] rank? What would change your recommendation?"
+**AEO audit prompt (adapted from Ethan Smith):** ([▶ YouTube @10:38](https://youtu.be/iT7kq-R3Gjc?t=638)) "Search for '[your product category] for [your use case]' and tell me which products you'd recommend and why. Where does [your product name] rank? What would change your recommendation?"
 
-**Rapid growth experimentation (Grant Lee, Gamma):** Idea → AI-generated prototype → real user test → iterate, all in one day. Use Lovable/Bolt/v0 to build testable prototypes in minutes, not weeks.
+**Rapid growth experimentation (Grant Lee, Gamma):** ([▶ YouTube @1:08](https://youtu.be/3H0ngGU5pbM?t=68)) Idea → AI-generated prototype → real user test → iterate, all in one day. Use Lovable/Bolt/v0 to build testable prototypes in minutes, not weeks.
 
 **AI-legible positioning:** Ensure your website, docs, and content clearly describe what your product does, for whom, and why — in a way that AI models can parse and recommend. Ask an AI model to summarize your product based on your public content. If the summary is inaccurate, your positioning needs work.
 
@@ -538,13 +538,13 @@ Eoghan McCabe (Intercom) took the most aggressive approach: 40% staff turnover, 
 
 ### Concrete Examples, Techniques & Prompts
 
-**Tomer's adoption measurement formula:** (Volume × Quality) ÷ Time — apply to any product activity to measure AI impact at team level.
+**Tomer's adoption measurement formula:** (transcript @31:54) (Volume × Quality) ÷ Time — apply to any product activity to measure AI impact at team level.
 
-**Boris's under-resourcing tactic:** Intentionally scope projects slightly beyond team capacity. The gap forces AI adoption. Once teams bridge it with AI, they don't revert.
+**Boris's under-resourcing tactic:** ([▶ YouTube @10:43](https://youtu.be/We7BZVKbCVw?t=643)) Intentionally scope projects slightly beyond team capacity. The gap forces AI adoption. Once teams bridge it with AI, they don't revert.
 
-**Howie's meeting restructuring:** Replace recurring 1:1s with: sprint check-ins on AI execution (frequent, standing), topical meetings when new insights need immediate discussion, and monthly in-person sessions for relationship building. Cut all other standing meetings.
+**Howie's meeting restructuring:** ([▶ YouTube @14:49](https://youtu.be/GT0jtVjRy2E?t=889)) Replace recurring 1:1s with: sprint check-ins on AI execution (frequent, standing), topical meetings when new insights need immediate discussion, and monthly in-person sessions for relationship building. Cut all other standing meetings.
 
-**Tomer's change management playbook:**
+**Tomer's change management playbook:** (transcript @46:07)
 1. Add AI fluency to hiring criteria and performance reviews
 2. Create exclusive early-access programs (FOMO drives adoption)
 3. Celebrate wins publicly with specific "before/after" examples
